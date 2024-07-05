@@ -33,7 +33,7 @@ const Login = () => {
           <form onSubmit={handleSubmit} className='part-two flex flex-col gap-10 pt-16 h-full pb-10'>
             <div>
               <div className='for-input relative h-[55px] '>
-                <input ref={mail} type="text" className='border-[1px] border-stone-700 md:w-full w-[80%] h-full rounded-md' placeholder='Email or phone' required />
+                <input ref={mail} type="text" className='mail-input border-[1px] border-stone-700 md:w-full w-[80%] h-full rounded-md' placeholder='Email or phone' required />
               </div>
               <p className='text-blue-700 font-medium text-sm pt-2 cursor-pointer'>Forgot email!</p>
             </div>

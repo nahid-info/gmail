@@ -35,7 +35,7 @@ const Pass = () => {
           <ul className=' flex flex-col gap-5 '>
             <li><img src={image} alt='logo' className='w-16' /></li>
             <li><h2 className=' text-4xl'>Welcome</h2></li>
-            <li className='cursor-pointer flex gap-2 items-center text-stone-600 border-[1px] p-1 rounded-3xl border-stone-400'><FaUserCircle className='text-2xl' />
+            <li className='cursor-pointer flex max-w-60 sm:w-full gap-2 items-center text-stone-600 border-[1px] p-1 rounded-3xl border-stone-400'><FaUserCircle className='text-2xl' />
               <p className=' text-sm font-medium'>{gmail}</p>
               <FaAngleDown className=' relative top-[1px] right-1' />
             </li>
@@ -46,8 +46,8 @@ const Pass = () => {
               <div className='for-input relative h-[55px] '>
                 <input ref={pass} type={`${showPass ? 'text' : 'password'}`} className='pass-input border-[1px] border-stone-700 md:min-width[500px] h-full rounded-md' placeholder='Enter your password' required />
               </div>
-              <label onClick={handleClick} htmlFor="show-pass" className=' flex gap-2 mt-4 font-medium text-md cursor-pointer'>
-                <input ref={checkBox} id='show-pass' type='checkbox' className=' relative w-5 h-5' />Show password
+              <label onClick={handleClick} className='flex items-center gap-2  w-[400px] mt-4 font-medium text-md cursor-pointer'>
+                <input ref={checkBox} type='checkbox' className='inline-block w-5 h-5' /> <p className='inline-block flex-1'>Show password</p>
               </label>
             </div>
             <div className='hidden text-sm'>
