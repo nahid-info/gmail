@@ -28,8 +28,8 @@ const Pass = () => {
   }
 
   return (
-    <div className='app-container h-screen flex flex-col md:gap-4 justify-between md:justify-center items-center bg-blue-50'>
-      <div className='main-box md:w-[70%] md:h-[65%] p-10 bg-white rounded-3xl'>
+    <div className=' app-container h-screen flex flex-col md:gap-4 justify-between md:justify-center items-center bg-blue-50'>
+      <div className='main-box md:w-[70%] md:h-[65%] sm:p-10 bg-white rounded-3xl'>
 
         <div className='first-part flex justify-between'>
           <ul className=' flex flex-col gap-5 '>
@@ -44,9 +44,9 @@ const Pass = () => {
           <form onSubmit={submitPass} className='part-two flex flex-col gap-10 pt-16 h-full pb-10'>
             <div>
               <div className='for-input relative h-[55px] '>
-                <input ref={pass} type={`${showPass ? 'text' : 'password'}`} className='pass-input border-[1px] border-stone-700 md:min-width[500px] h-full rounded-md' placeholder='Enter your password' required />
+                <input ref={pass} type={`${showPass ? 'text' : 'password'}`} className='pass-input border-[1px] border-stone-700 md:min-w-[400px] h-full rounded-md' placeholder='Enter your password' required />
               </div>
-              <label onClick={handleClick} className='flex items-center gap-2  w-[400px] mt-4 font-medium text-md cursor-pointer'>
+              <label onClick={handleClick} className='flex items-center gap-2 mt-4 font-medium text-md cursor-pointer'>
                 <input ref={checkBox} type='checkbox' className='inline-block w-5 h-5' /> <p className='inline-block flex-1'>Show password</p>
               </label>
             </div>
